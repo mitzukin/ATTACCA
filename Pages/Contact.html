@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap"
+            rel="stylesheet">
+        <!-- Tailwind Css -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+            rel="stylesheet">
+
+        <!-- Css -->
+        <link rel="stylesheet" href="style.css">
+
+        <title> ATTACCA </title>
+
+    </head>
+    <body class="font-[Poppins] ">
+
+        <nav
+            class="bg-white fixed  z-50 w-full border border-slate-100 text-zinc-900 shadow-sm text-xl">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div
+                    class="flex items-center justify-between md:justify-center h-16">
+
+                    <!-- Mobile Logo -->
+
+                    <div>
+                        <!-- <a href="#"><img src="images/Logo.png" alt
+                            class="h-10 w-auto md:hidden"></a> -->
+                        <a href="/index.html"><h1
+                                class="font-semibold text-xl md:hidden font-[Satisfy]">ATTACA</h1></a>
+
+                    </div>
+                    <!-- Hamburger menu for mobile -->
+                    <div class="flex md:hidden">
+                        <button id="mobile-menu-toggle"
+                            class="text-black hover:text-gray-300 focus:outline-none">
+                            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    stroke="currentColor"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Navbar links -->
+                    <div class="hidden md:flex md:items-center gap-10 ">
+                        <a href="/index.html" class="nav-link ">About</a>
+                        <a href="/Pages/Services.html"
+                            class="nav-link ">Services</a>
+                        <!-- <a href="#"><img src="images/Logo.png" alt
+                            class="h-10 w-auto md:block"></a> -->
+
+                        <a href="/index.html"><h1
+                                class="font-semibold text-2xl md:block font-[Satisfy]">ATTACA</h1></a>
+                        <a href="/Pages/Location.html" class="nav-link ">Location</a>
+                        <a href="/Pages/Contact.html" class="nav-link ">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile menu (hidden by default) -->
+            <div id="mobile-menu"
+                class="md:hidden absolute bg-white w-full border border-b-slate-100">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="#" class="block nav-link ">About</a>
+                    <a href="/Pages/Services.html"
+                        class="block nav-link ">Services</a>
+                    <a href="/Pages/Location.html" class="nav-link ">Location</a>
+                    <a href="/Pages/Contact.html" class="block nav-link ">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="min-h-screen pt-20 flex px-3.5 lg:gap-10 justify-center items-center">
+
+            <div>
+                <h1 class="font-semibold text-5xl font-[Satisfy]">ATTACA</h1>
+                <h1 class="font-semibold text-5xl text-zinc-500">Company</h1>
+
+                <p class="text-xl mt-5">"Your Vision, Our Expertise</p>
+
+                <div class="text-slate-800 flex flex-col gap-5 mt-10">
+                    <div class="flex items-center gap-5 justify-start"> <div class="bg-zinc-100 p-3 rounded-full"><img src="/Icons/Mail.svg" alt="" class="h-6 w-6 "></div><p>attaccaeventco.gmail.com</p></div>
+                    <div class="flex items-center gap-5 justify-start"> <div class="bg-zinc-100 p-3 rounded-full"><img src="/Icons/Phone.svg" alt="" class="h-6 w-6 "></div><p>+6399484285531 / +639369702648</p></div>
+                    <div class="flex items-center gap-5 justify-start"> <div class="bg-zinc-100 p-3 rounded-full"><img src="/Icons/Location.svg" alt="" class="h-6 w-6 "></div><p>123 Brookside Cainta Rizal</p></div>
+                </div>
+
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/564x/ab/e1/0b/abe10ba2127c71cf3775da76b62d8456.jpg" alt="" class="hidden lg:block">
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+
+        <div class="bg-zinc-900 py-10 mt-10">
+            <div
+                class="max-w-7xl mx-auto flex flex-col gap-5 md:flex-row justify-between items-center px-3.5">
+                <h1 class="text-zinc-500">© 2024 Attaca. All rights
+                    reserved.</h1>
+
+                <h1
+                    class="font-semibold text-xl text-zinc-500 md:block font-[Satisfy]">ATTACA</h1>
+                <div class="flex gap-5 text-zinc-500">
+                    <button>Terms and Condition</button>
+                    <button>Privacy Policy</button>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- Include index.js script -->
+    <script src="../index.js"></script>
+
+</html>
